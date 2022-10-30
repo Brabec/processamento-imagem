@@ -75,15 +75,13 @@ def maskBlur():
 def convolve(img, mask):
     img_nova = img.reshape(img.shape[0], img.shape[1], 1)
     print(img_nova.shape)
-    # return np.convolve(img, mask)
+    
 
 
 def blur(img):
     return convolve(img, maskBlur())
 
-# showhist2(hist(),20.4)]
-# print(maskBlur().shape)
-# print(maskBlur().shape)
+
 img = imread("h.png")
 print(img.shape)
 x = img.shape[0]
@@ -91,8 +89,4 @@ y = img.shape[1]
 print(x, y)
 img_nova = img.flatten()
 convolve(img_nova, maskBlur())
-# print(img_nova.shape)
-# print(blur(img.reshape()))
-# print(histeq(img))
-# print(img.shape[2])
-# print(convolve(img, maskBlur()))
+

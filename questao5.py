@@ -44,7 +44,5 @@ def rgb2gray(image):
 	return result
 
 img = imread("exemplo.jpg")
-# img.flags
 img.setflags(write=1)
-#img.flags
 rgb2gray(img)
